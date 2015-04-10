@@ -189,8 +189,7 @@
                     $scope.$watch(function () {
                         return $scope.ngModel;
                     }, function (newText) {
-                        if (newText !== undefined && !changed) {
-                            // Set initial value;
+                        if (newText !== undefined) {
                             editor.setHTML(newText);
                         }
                     });
